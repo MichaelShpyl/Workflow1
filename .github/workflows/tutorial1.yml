@@ -30,6 +30,7 @@ jobs:
         run: date
 
   job4:
+    needs: [job1, job2]
     runs-on: ubuntu-latest
     steps:
       - name: Step 1 of job 4
