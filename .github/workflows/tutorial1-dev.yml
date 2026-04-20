@@ -1,0 +1,13 @@
+name: Dev Branch Workflow
+
+on:
+  push:
+    branches:
+      - Dev
+
+jobs:
+  dev_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello from Dev
+        run: echo "This only runs on pushes to Dev"
