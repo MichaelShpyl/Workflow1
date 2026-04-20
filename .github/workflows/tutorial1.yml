@@ -8,12 +8,16 @@ jobs:
     steps:
       - name: Step 1 of job 1
         run: echo "I am job 1"
+      - name: Print date
+        run: date
 
   job2:
     runs-on: ubuntu-latest
     steps:
       - name: Step 1 of job 2
         run: echo "I am job 2"
+      - name: Print date
+        run: date
 
   job3:
     runs-on: ubuntu-latest
@@ -22,3 +26,11 @@ jobs:
         run: |
           echo "I am job 3"
           echo "This is a multiline run block"
+      - name: Print date
+        run: date
+
+  job4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 of job 4
+        run: echo "I am job 4"
