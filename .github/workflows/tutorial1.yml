@@ -1,0 +1,24 @@
+name: Tutorial 1 Workflow
+
+on: [push, pull_request]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 of job 1
+        run: echo "I am job 1"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 of job 2
+        run: echo "I am job 2"
+
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 of job 3
+        run: |
+          echo "I am job 3"
+          echo "This is a multiline run block"
